@@ -1,0 +1,125 @@
+// Gray body and headings
+
+.body {
+    background-color: $gray;
+
+    &__heading {
+        width: auto;
+        height:100px;
+        clip-path: polygon(0 0, 50% 100%, 100% 0);
+        background-color: $brown;
+        color: $light-gray;
+        font-size: 0.9rem;
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 300;
+        }  
+    }
+}
+
+/* up arrow for back to top */
+#back-to-top i {
+border: solid #EDEAE5;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 7px;
+}
+
+.up {
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+/* up arrow for back to top end */
+
+/* Scroll to top button */
+#back-to-top {
+background-color: $orange;
+color: #EDEAE5;
+opacity: 0;
+transition: opacity .6s ease-in-out;
+z-index: 999;
+position: fixed;
+right: 20px;
+bottom: 20px;
+width: 50px;
+height: 50px;
+box-sizing: border-box;
+border-radius: 50%;
+}
+
+a#back-to-top {
+text-align: center;
+line-height: 0.5;
+padding-left: 1px;
+padding-top: 20px;
+}
+
+#back-to-top.show {
+    opacity: 0.8;
+}
+
+.learn_more-obj {
+    width: 60px;
+    height: 30px;
+    clip-path: polygon(0 0, 0 100%, 90% 50%);
+    background-color: $orange;
+    color: $orange;
+}
+
+.details {
+    background-color: white;
+}
+
+#pointsdevente iframe {
+    height: 250px;
+    max-width: 100%;
+}
+
+#contact select {
+    background-color: $gray;
+    border: 2px solid $orange;
+}
+
+#contact button {
+    background-color: $gray;
+    border: 2px solid $orange;
+}
+
+#reservationSpec,
+#numberLabel,
+#numberInput {
+    display: none;
+}
+
+.btn-submit {
+    background-color: $orange;
+}
+
+.btn-ingredients {
+    border: none;
+    background: none;
+}
+
+@media (max-width:768px) {
+    #accueil {
+        position: relative;
+        // padding-top: 122px;
+    }
+
+    .body {
+        background-color: white;
+    }
+}
+
+@media (max-width:1089px) {
+    .body {
+
+        &__heading {
+
+            h2 {
+                font-size: 1.2rem;
+            }  
+        }
+    }
+}

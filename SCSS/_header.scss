@@ -1,0 +1,129 @@
+.navbar__logo{
+    height: 200px;
+    box-shadow: 1px 1px 3px;
+}
+
+.navbar-brand {
+    z-index: 1;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.header__info-box{
+    height: 100px;
+    background-color: $gray;
+}
+
+.header__info-box img {
+    height: 35px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#mainNavbar {
+    z-index: 2;
+    height: 100px;
+    background-color: $brown;
+    opacity: 0.9;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-shadow: 0 0 0.5px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.btn-div {
+    position: absolute;
+    top: 0px;
+    right: 10vw;
+    margin-top: 2px;
+}
+
+#phone-num {
+    float:left;  
+    margin-right: 2px;  
+    border: 2px solid $brown;
+}
+#resa {
+    float:left;
+    border: 2px solid $brown;
+}
+
+#contactLoad {
+    display:none;
+}
+
+
+@media (max-width:1089px){
+    #header .container {
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    #header .row {
+        width: 100%;
+    }
+
+    .btn-div {
+        right: 5vw;
+    }
+
+    #mainNavbar {
+        font-size: 0.8rem;
+    }
+
+    .navbar__logo{
+        height: 150px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .navbar__logo{
+        height: 80px;
+    }
+
+    #mainNavbar {
+        height: auto;
+        width: 100%;
+        // position: fixed;
+    }
+
+    #mainNavbar .title-div {
+        padding: 15px 0;
+    }
+
+    #mainNavbar .title1 {
+        width: 150px;
+    }
+    
+    #mainNavbar .title2 {
+        width: 165px;
+    }
+
+    .header__info-box {
+        display:none;
+    }
+
+    #header .btn-div {
+        display:none;
+    }
+
+}
+
+@media (max-width:414px){
+    #mainNavbar .title1 {
+        width: 80px;
+    }
+    
+    #mainNavbar .title2 {
+        width: 88px;
+    }
+}

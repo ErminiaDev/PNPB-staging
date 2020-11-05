@@ -1,0 +1,123 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    }
+
+h3 {
+    font-size: 1.2rem;
+    color: $orange;
+}
+
+h4 {
+    font-size: 1.0rem;
+}
+
+.intro {
+    line-height: 140%;
+
+    & span {
+        color: $orange;
+        font-weight: 500;
+    }
+}
+
+.highlight {
+    color: $orange;
+    font-weight: 600;
+}
+
+.text__part-1, .text__part-2 {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 140%;
+}
+
+#engagements .intro {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#engagements .accordion {
+    color: $orange;
+}
+
+#engagements .accordion-content {
+    line-height: 140%;
+}
+
+#engagements .details__title {
+    color: $orange;
+    font-size: 1.1rem;
+}
+
+#engagements .details {
+    line-height: 140%;
+}
+
+#pointsdevente .subtext {
+    font-size: 0.8rem;
+}
+
+#produits h3 {
+    color: $orange;
+}
+
+#produits h4 {
+    color: $orange;
+    font-weight: 300;
+}
+
+#produits .items p {
+    line-height: 120%;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#produits h5 {
+    color: $orange;
+    font-size: 1.2rem;
+}
+
+#produits p .small {
+    font-size: 0.8rem;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+#pointsdevente .schedule {
+    font-size: 0.5rem;
+}
+
+#pointsdevente .confinement {
+    text-decoration: line-through;
+}
+
+#pointsdevente i {
+    font-size: 2.5rem;
+}
+
+#contact .cap {
+    color: $orange;
+}
+
+#reservationSpec span {
+    font-weight: 600;
+}
+
+@media (max-width:1089px) {
+    .text__part-1, .text__part-2 {
+        font-size: 1.2rem;
+    }
+}
